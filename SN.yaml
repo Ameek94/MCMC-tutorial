@@ -53,4 +53,4 @@ sampler:
     covmat: auto
     Rminus1_stop: 0.01
     Rminus1_cl_stop: 0.2   
-output: chains/Snx
+output: chains/Sn
