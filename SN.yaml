@@ -3,9 +3,6 @@ theory:
     path: 'global' # can provide path if you have your own modified version of camb
     stop_at_error: False
     extra_args:
-      halofit_version: mead
-      bbn_predictor: PArthENoPE_880.2_standard.dat
-      lens_potential_accuracy: 1
       num_massive_neutrinos: 1
       nnu: 3.046
       dark_energy_model: 'ppf'
@@ -13,10 +10,8 @@ theory:
       - 10
       - 100
 likelihood:
-  sn.pantheonplus: 
-     path: /Users/amkpd/Library/CloudStorage/OneDrive-SwanseaUniversity/Codes/QuintessenceAS/cobaya_packages/data/sn_data-1.6/
+  sn.pantheonplus: null
 params:
-# Baseline cosmological parameters
   w: # DE eqn of state
    prior: 
      min: -1.6
@@ -58,4 +53,4 @@ sampler:
     covmat: auto
     Rminus1_stop: 0.01
     Rminus1_cl_stop: 0.2   
-output: chains/Sn
+output: chains/Snx

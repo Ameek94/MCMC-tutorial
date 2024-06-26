@@ -7,7 +7,6 @@ theory:
       bbn_predictor: PArthENoPE_880.2_standard.dat
       lens_potential_accuracy: 1
       num_massive_neutrinos: 1
-     # AccuracyBoost: 2
       dark_energy_model: 'fluid'
       nnu: 3.046
       theta_H0_range:
