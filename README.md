@@ -13,6 +13,7 @@ Once, logged in load the following modules
 ```bash
 module load anaconda/2023.09 compiler/gnu/12/1.0 mpi/openmpi/4.1.5
 ```
+If you are working on your own laptop and not the cluster, you should skip the first two steps.
 
 You can create a conda environment but I recommend using a python virtual environment. Create this using
 ```bash
@@ -24,7 +25,7 @@ Activate your new environment.
 source /path/to/your/virtual/environment/bin/activate
 ```
 
-Now, you can follow the instructions on https://cobaya.readthedocs.io/en/latest/installation.html to install cobaya. You can first install the python mpi wrapper, although this is not necessary to get started it is highly recommended to do so.
+Now, you can follow the instructions on the cobaya [homepage](https://cobaya.readthedocs.io/en/latest/installation.html) to install cobaya (reproduced below). You can first install the python MPI wrapper if you want to use parallel processing (you will need to install an MPI package if you are working on your laptop). Although this is not necessary to get started it is highly recommended to do so since this will make the sampling more efficient.
 ```bash
 python -m pip install "mpi4py>=3" --upgrade --no-binary :all:
 python -m pip install cobaya --upgrade
@@ -44,6 +45,7 @@ cobaya-run inputfile.yaml
 ```
 Note! You should not run programs directly on the login node. It is ok however to add the --test flag to the cobaya-run command when on the login node. This will check that the input file provided is valid and the required theory codes and likelihoods are already installed. To do a full MCMC run, start an [interactive job](https://supercomputingwales.github.io/SCW-tutorial/04-running-jobs/) or use the provided job scripts. 
 
+To analyse the results of the MCMC, you can work directly on the cluster or download the chains to your own system. For the latter, see the Swansea Sunbird [documentation](https://supercomputingwales.github.io/SCW-tutorial/03-moving-data/). Getdist notebooks for analysing the chains are provided in the repository.
 
 
 
