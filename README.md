@@ -43,6 +43,12 @@ To run cobaya with your input file, type
 ```bash
 cobaya-run inputfile.yaml 
 ```
+to run without MPI or 
+```bash
+mpirun -n "N" cobaya-run inputfile.yaml 
+```
+if using N MPI processes.
+
 Note! You should not run programs directly on the login node. It is ok however to add the --test flag to the cobaya-run command when on the login node. This will check that the input file provided is valid and the required theory codes and likelihoods are already installed. To do a full MCMC run, start an [interactive job](https://supercomputingwales.github.io/SCW-tutorial/04-running-jobs/) or use the provided job scripts. 
 
 To analyse the results of the MCMC, you can work directly on the cluster or download the chains to your own system. For the latter, see the Swansea Sunbird [documentation](https://supercomputingwales.github.io/SCW-tutorial/03-moving-data/). Getdist notebooks for analysing the chains are provided in the repository.
