@@ -45,9 +45,9 @@ cobaya-run inputfile.yaml
 ```
 to run without MPI or 
 ```bash
-mpirun -n "N" cobaya-run inputfile.yaml 
+mpirun -n nproc cobaya-run inputfile.yaml 
 ```
-if using N MPI processes.
+if using nproc MPI processes.
 
 Note! You should not run programs directly on the login node. It is ok however to add the --test flag to the cobaya-run command when on the login node. This will check that the input file provided is valid and the required theory codes and likelihoods are already installed. To do a full MCMC run, start an [interactive job](https://supercomputingwales.github.io/SCW-tutorial/04-running-jobs/) or use the provided job scripts. 
 
