@@ -1,1 +1,1 @@
-Instructions for setting up for running code on the Swansea cluster
+## Instructions for setting up code on the Swansea cluster
