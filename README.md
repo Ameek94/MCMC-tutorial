@@ -33,7 +33,7 @@ python -c "import cobaya"
 ```
 If everything went well, the last command should not give you an error.
 
-Cobaya input files are provided in the .yaml format. To install the cosmological theory codes and likelihoods used in this tutorial type
+Cobaya input files are provided in the .yaml format. To install the cosmological theory codes and likelihoods used in a particular inputfile type
 ```bash
 cobaya-install inputfile.yaml -p /path/to/packages
 ```
@@ -49,7 +49,7 @@ mpirun -n nproc cobaya-run inputfile.yaml
 ```
 if using nproc MPI processes.
 
-Note! You should not run programs directly on the login node. It is ok however to add the --test flag to the cobaya-run command when on the login node. This will check that the input file provided is valid and the required theory codes and likelihoods are already installed. To do a full MCMC run, start an [interactive job](https://supercomputingwales.github.io/SCW-tutorial/04-running-jobs/) or use the provided job scripts. 
+Note! You should not run programs directly on the login node. It is ok however to add the --test flag to the cobaya-run command when on the login node. This will check that the input file provided is valid and the required theory codes and likelihoods are already installed. To do a full MCMC run, start an [interactive job](https://supercomputingwales.github.io/SCW-tutorial/04-running-jobs/) for short runs or use the provided job scripts for longer runs. 
 
 To analyse the results of the MCMC, you can work directly on the cluster or download the chains to your own system. For the latter, see the Swansea Sunbird [documentation](https://supercomputingwales.github.io/SCW-tutorial/03-moving-data/). Getdist notebooks for analysing the chains are provided in the repository. Note that python notebooks will not work directly on the cluster.
 
