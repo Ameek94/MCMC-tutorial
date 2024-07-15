@@ -2,7 +2,7 @@
 
 This repository contains the different files required to do the coding exercises presented in the lectures.
 
-## Instructions for setting up Cobaya on the Swansea cluster
+## Instructions for setting up Cobaya on the Swansea cluster or your laptop
 
 Login to the cluster through the terminal
 ```bash
