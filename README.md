@@ -9,7 +9,7 @@ Login to the cluster through the terminal
 ssh username@sunbird.swansea.ac.uk
 ```
 
-Once, logged in load the following modules
+Once logged in load the following modules
 ```bash
 module load anaconda/2023.09 compiler/gnu/12/1.0 mpi/openmpi/4.1.5
 ```
