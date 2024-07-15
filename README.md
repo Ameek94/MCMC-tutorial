@@ -13,9 +13,9 @@ Once logged in load the following modules
 ```bash
 module load anaconda/2023.09 compiler/gnu/12/1.0 mpi/openmpi/4.1.5
 ```
-If you are working on your own laptop and not the cluster, you should skip the first two steps.
+If you are working on your own laptop and not the cluster, you should skip the first two steps. For running the codes on your laptop you will still need python and the gcc (or another) compiler installed, mpi optional. Installation issues mainly happen with MacOS or Windows, for the former I recommend using [Homebrew](https://brew.sh/) to manage the installation of these and then use [anaconda/miniconda](https://docs.anaconda.com/miniconda/) for managing the python environments. For Windows look into [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) which provides a Linux enviroment to use on Windows or work directly on the cluster. 
 
-You can create a conda environment but I recommend using a python virtual environment. Create this using
+You can then create a conda environment but for the cluster I recommend using a python virtual environment. Create this using
 ```bash
 python -m venv /path/to/your/virtual/environment
 ```
@@ -25,7 +25,7 @@ Activate your new environment.
 source /path/to/your/virtual/environment/bin/activate
 ```
 
-Now, you can follow the instructions on the cobaya [homepage](https://cobaya.readthedocs.io/en/latest/installation.html) to install cobaya (reproduced below). You can first install the python MPI wrapper if you want to use parallel processing (you will need to install an MPI package if you are working on your laptop). Although this is not necessary to get started it is highly recommended to do so since this will make the sampling more efficient.
+Now, you can follow the instructions on the cobaya [homepage](https://cobaya.readthedocs.io/en/latest/installation.html) to install cobaya (reproduced below). You can first install the python MPI wrapper if you want to use parallel processing to run multiple MCMC chains (you will need to install an MPI package if you are working on your laptop). Although this is not necessary to get started it is highly recommended to do so since this will make the sampling more efficient.
 ```bash
 python -m pip install "mpi4py>=3" --upgrade --no-binary :all:
 python -m pip install cobaya --upgrade
