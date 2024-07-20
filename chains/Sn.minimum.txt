@@ -1,0 +1,2 @@
+#        weight    minuslogpost               w           omch2              H0          omegam        omega_de        chi2__SN   minuslogprior minuslogprior__0            chi2 chi2__sn.pantheonplus
+              1       702.57896     -0.89411988      0.11975906       70.291548      0.28821445      0.71171241        1402.467       1.3454724        1.3454724        1402.467              1402.467

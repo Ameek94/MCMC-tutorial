@@ -1,0 +1,12 @@
+ -log(Like) = 702.5789633567516
+  chi-sq    = 1405.1579267135032
+
+    1  -8.941198800e-01  w                       w
+    2  0.11975906        omch2                   \Omega_\mathrm{c} h^2
+    4  70.291548         H0                      H_0
+
+
+    3  2.882144488e-01   omegam                  \Omega_\mathrm{m}
+    5  7.117124100e-01   omega_de                \Omega_\Lambda
+    6  1.402466982e+03   chi2__SN                \chi^2_\mathrm{SN}
+    7  1.402466982e+03   chi2__sn.pantheonplus   \chi^2_{\rm sn.pantheonplus}
