@@ -14,7 +14,7 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem-per-cpu=4096 #memory per process in MB 
 #SBATCH --mail-type=END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user= xyz@swansea.ac.uk     # Where to send mail
+#SBATCH --mail-user= xyz@swansea.ac.uk     # change to your email to get updates
 
 module load anaconda/2023.09
 module load compiler/gnu/12/1.0 

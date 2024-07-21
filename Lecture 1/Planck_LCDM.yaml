@@ -105,6 +105,6 @@ sampler:
     oversample_power: 0.4
     proposal_scale: 1.9
     covmat: auto # replace with covmat for 2nd run
-    Rminus1_stop: 0.03
+    Rminus1_stop: 0.01
     Rminus1_cl_stop: 0.2   
 output: chains/LCDM
