@@ -51,7 +51,7 @@ if using nproc MPI processes.
 
 Note! You should not run programs directly on the login node. It is ok however to add the --test flag to the cobaya-run command when on the login node. This will check that the input file provided is valid and the required theory codes and likelihoods are already installed. To do a full MCMC run, start an [interactive job](https://supercomputingwales.github.io/SCW-tutorial/04-running-jobs/) for short runs or use the provided job scripts for longer runs. 
 
-To analyse the results of the MCMC, you can work directly on the cluster or download the chains to your own system. For the latter, see the Swansea Sunbird [documentation](https://supercomputingwales.github.io/SCW-tutorial/03-moving-data/). Getdist notebooks for analysing the chains are provided in the repository. Note that python notebooks will not work directly on the cluster.
+For moving the input files to the cluster or downloading files from the cluster to your system, see the Swansea Sunbird [documentation](https://supercomputingwales.github.io/SCW-tutorial/03-moving-data/). To analyse the results of the MCMC, you can work directly on the cluster or download the chains to your own system.  Getdist notebooks for analysing the chains are provided in the repository. Note that python notebooks will not work directly on the cluster.
 
 
 
