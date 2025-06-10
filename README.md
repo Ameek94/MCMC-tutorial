@@ -13,7 +13,7 @@ Once logged in load the following modules
 ```bash
 module load anaconda/2023.09 compiler/gnu/12/1.0 mpi/openmpi/4.1.5
 ```
-If you are working on your own laptop and not the cluster, you should skip the first two steps. For running the codes on your laptop you will still need python and the gcc (or another) compiler installed, mpi optional. Installation issues mainly happen with MacOS or Windows, for the former I recommend using [Homebrew](https://brew.sh/) to manage the installation of these and then use [anaconda/miniconda](https://docs.anaconda.com/miniconda/) for managing the python environments. For Windows look into [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) which provides a Linux enviroment to use on Windows or work directly on the cluster. 
+If you are working on your own laptop and not the cluster, you should skip the first two steps. For running the codes on your laptop you will still need python and the gcc (or another) compiler installed, mpi optional. Installation issues mainly happen with MacOS or Windows, for the former I recommend using [Homebrew](https://brew.sh/) to manage the installation of these and then use [anaconda/miniconda](https://docs.anaconda.com/miniconda/) or [python-venv](https://docs.python.org/3/library/venv.html) for managing the python environments. For Windows look into [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) which provides a Linux enviroment to use on Windows or work directly on the cluster. 
 
 You can then create a conda environment but for the cluster I recommend using a python virtual environment. Create this using
 ```bash
