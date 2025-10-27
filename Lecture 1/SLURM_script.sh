@@ -25,5 +25,11 @@ source /path/to/your/virtual/environment/bin/activate # if using python virtual 
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
-mpirun -n 4 cobaya-run Planck_LCDM.yaml --resume
-mpirun -n 4 cobaya-run Planck_LCDM.yaml --minimize
+srun --mpi=pmix \
+     --ntasks=$SLURM_NTASKS \
+     --cpus-per-task=$SLURM_CPUS_PER_TASK \
+     cobaya-run Planck_LCDM.yaml --resume
+
+# sometimes mpirun does not work on our cluster so better to use srun 
+# mpirun -n 4 cobaya-run Planck_LCDM.yaml --resume
+# mpirun -n 4 cobaya-run Planck_LCDM.yaml --minimize
